@@ -21,7 +21,13 @@ public class MainManager : MonoBehaviour
     
     private bool m_GameOver = false;
 
-    
+    [System.Serializable]
+    class SaveData
+    {
+        public int bestScore;
+        public string PlayerName;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
